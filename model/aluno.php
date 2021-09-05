@@ -18,6 +18,12 @@ class Aluno{
         $this ->n4 = $n4;
     }
 
+    public function getMedia(){
+        $media = ($n1 + $n2 + $n3 + $n4) / 4;
+        return $media;
+    }
+
+
 public  function  setNome ($nome)
 {
     $this->nome = $nome;
@@ -82,5 +88,9 @@ public  function  getN4 ()
 
 
 
+    $aluno = new Aluno("Ronildo",123456789,7,7,7,7);
+    echo $aluno->getNome();
+    echo $aluno->getRa();
+echo $aluno->getMedia();
 
 ?>
